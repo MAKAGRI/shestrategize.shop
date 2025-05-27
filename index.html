@@ -1,182 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAT Cargo VAD LLC</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #333;
-        }
-        nav {
-            background: #000;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        .hero {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            padding: 80px 20px;
-            background: #111;
-            color: #fff;
-            min-height: 100vh;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .hero-text {
-            max-width: 500px;
-            padding: 20px;
-            animation: slideInLeft 1.5s ease;
-        }
-        .hero-text h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        .hero-text p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        .hero-img img {
-            max-width: 400px;
-            width: 100%;
-            border-radius: 10px;
-            animation: slideInRight 1.5s ease;
-        }
-        .section {
-            padding: 60px 20px;
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 1s ease;
-        }
-        .section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .section h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        .section p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #555;
-        }
-        .contact {
-            background: #e9e9e9;
-            padding: 60px 20px;
-        }
-        footer {
-            background: #000;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideInLeft {
-            from { transform: translateX(-50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        @keyframes slideInRight {
-            from { transform: translateX(50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>She Strategize LLC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffafc;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #ffc6d2, #fce4ec);
+      color: #3a3a3a;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      font-weight: 600;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      color: #d12d6a;
+      font-size: 2em;
+      border-bottom: 2px solid #f8c2cf;
+      padding-bottom: 10px;
+    }
+    .about, .services, .vision, .contact {
+      background: #fff;
+      margin-bottom: 30px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .contact p, .contact a {
+      font-size: 1.1em;
+      color: #444;
+    }
+    .footer {
+      text-align: center;
+      background-color: #fbe8ee;
+      padding: 20px;
+      color: #555;
+    }
+    @media(max-width: 768px){
+      header h1 { font-size: 2.2em; }
+    }
+  </style>
 </head>
 <body>
 
-    <nav>
-        <div class="logo">PAT Cargo VAD LLC</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <header>
+    <h1>She Strategize LLC</h1>
+    <p>Empowering businesses with smart strategies.</p>
+  </header>
 
-    <div class="hero" id="home">
-        <div class="hero-text">
-            <h1>PAT Cargo VAD LLC</h1>
-            <p>Your trusted partner in transportation and warehousing. We provide reliable cargo services and storage solutions to meet your business needs with efficiency and care.</p>
-        </div>
-        <div class="hero-img">
-            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=934&q=80" alt="Cargo Services">
-        </div>
-    </div>
+  <section class="about">
+    <h2>About Us</h2>
+    <p>She Strategize LLC is a Virginia-based consultancy dedicated to helping businesses — especially women-led ventures — build powerful, scalable, and effective strategies for growth. Founded by Jaida Smith, the company brings innovative and personalized consulting to life.</p>
+  </section>
 
-    <div class="section" id="about">
-        <h2>About Us</h2>
-        <p>PAT Cargo VAD LLC is a Domestic LLC based in Arizona, offering specialized services in transportation and warehousing. With a focus on reliability and customer satisfaction, we have been serving businesses since 2021.</p>
-        <p><strong>Registered Address:</strong><br>
-        2902 W Sweetwater Ave, Apt 2190, Phoenix, AZ 85029, United States</p>
-    </div>
+  <section class="services">
+    <h2>Services</h2>
+    <p>Our services include strategic planning, digital transformation advisory, brand positioning, and systems development for small to mid-size businesses. <strong>More details coming soon...</strong></p>
+  </section>
 
-    <div class="section contact" id="contact">
-        <h2>Contact Us</h2>
-        <p><strong>Email:</strong> <a href="mailto:contact@patcargovadllc.click">contact@patcargovadllc.click</a></p>
-        <p><strong>Agent Address:</strong><br>
-        2902 W Sweetwater Ave, Apt 2190, Phoenix, AZ 85029, United States</p>
-    </div>
+  <section class="vision">
+    <h2>Our Vision</h2>
+    <p>To elevate and empower entrepreneurs through clarity, structure, and creativity. We believe in intentional business models built with both heart and smart.</p>
+  </section>
 
-    <footer>
-        &copy; 2025 PAT Cargo VAD LLC. All rights reserved.
-    </footer>
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:contact@shestrategize.shop">contact@shestrategize.shop</a></p>
+    <p>Phone: <a href="tel:+12516152353">+1 251-615-2353</a></p>
+    <p>Address: 450 Bend Trl NW Apt 306, Christiansburg, VA 24073</p>
+  </section>
 
-    <script>
-        // Intersection Observer for fade-in effect
-        const sections = document.querySelectorAll('.section');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
-
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+  <div class="footer">
+    &copy; 2025 She Strategize LLC — All rights reserved.
+  </div>
 
 </body>
 </html>
